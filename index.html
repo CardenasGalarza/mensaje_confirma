@@ -22,10 +22,17 @@
     <script src="app.js"></script>
     <div class="contact__container bd-grid">
         <form action="https://formsubmit.co/umbrella.corporation.gian10@gmail.com" id="contactForm" method="POST">
+            <input type="text" placeholder="Nombre" name="name"  class="contact__input" required>
+            <input type="email" placeholder="Correo" name="email" class="contact__input" required>
+            <input type="text" placeholder="Celular" name="subject" class="contact__input" required>
 
-            <button type="submit" class="contact__button button" >Atras</button>
+            <textarea placeholder="Comentamos" name="comments" id="" cols="15" rows="5" class="contact__input"></textarea>
 
-            <input type="hidden" name="_next" value="https://web-umbrella-corporation-g.vercel.app">
+
+
+            <button type="submit" class="contact__button button" >Enviar</button>
+
+            <input type="hidden" name="_next" value="https://mensaje-confirma.vercel.app">
             <input type="hidden" name="_captcha" value="false">
 
         </form>
